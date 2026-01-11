@@ -58,4 +58,34 @@ Struktur tabel dibuat menggunakan **Migration Laravel**.
 ### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/USERNAME/REPO-APOTEK.git
+2️⃣ Masuk ke Folder Project
+cd nama-project
+
+3️⃣ Install Dependency
+composer install
+
+4️⃣ Copy File Environment
+cp .env.example .env
+
+5️⃣ Konfigurasi Database di .env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=uas_apotek
+DB_USERNAME=root
+DB_PASSWORD=
+
+6️⃣ Generate Key
+php artisan key:generate
+
+7️⃣ Migrasi Database
+php artisan migrate
+
+8️⃣ Jalankan Server
+php artisan serve
+
+
+Akses aplikasi di:
+
+http://127.0.0.1:8000/produk
 
